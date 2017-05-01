@@ -1,0 +1,58 @@
+! Blurb file created by Inform build 6M62
+
+status "c:/Program Files (x86)/Inform 7/Internal/\Miscellany\CblorbModel.html" "./TombDemo.inform\Build\StatusCblorb.html"
+
+
+! Identification
+
+project folder "./TombDemo.inform"
+release to "./TombDemo.materials\Release"
+
+! Blorb instructions
+
+storyfile leafname "TombDemo.gblorb"
+storyfile "./TombDemo.inform\Build\output.ulx" include
+ifiction "./TombDemo.inform\Metadata.iFiction" include
+cover "c:/Program Files (x86)/Inform 7/Internal/\Miscellany\Cover.jpg"
+picture 1 "c:/Program Files (x86)/Inform 7/Internal/\Miscellany\Cover.jpg"
+release file "c:/Program Files (x86)/Inform 7/Internal/\Miscellany\Cover.jpg"
+release file "c:/Program Files (x86)/Inform 7/Internal/\Miscellany\Small Cover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "0ECD1A40-6250-423B-8707-F88501E8A267"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2017"
+placeholder [TITLE] = "TombDemo"
+placeholder [AUTHOR] = "Cole Erickson"
+placeholder [BLURB] = "A work of interactive fiction."
+
+! Other material to release
+
+auxiliary "./TombDemo.materials\text.js" "--" "--"
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "TombDemo.gblorb.js"
+template path "./TombDemo.materials\Templates"
+template path "c:/Users/cole\Inform\Templates"
+template path "c:/Program Files (x86)/Inform 7/Internal/\Templates"
+placeholder [INTERPRETERSCRIPTS] = " <script src='text.js'></script>"
+interpreter "Vorple" "g"
+base64 "./TombDemo.inform\Build\output.ulx" to "./TombDemo.materials\Release\interpreter\TombDemo.gblorb.js"
+
+! Website instructions
+
+template path "./TombDemo.materials\Templates"
+template path "c:/Users/cole\Inform\Templates"
+template path "c:/Program Files (x86)/Inform 7/Internal/\Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line10"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line13"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
